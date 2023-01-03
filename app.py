@@ -13,3 +13,14 @@ def hello_world_from_algo():
     res = str(response.text)
     return res
 
+@app.route("/algo_1")
+def hello_world_from_algo1():
+    response = requests.get(f"http://18.222.143.54:5000/")
+    res = str(response.text)
+    return res
+
+@app.route("/algo_2")
+def hello_world_from_algo2():
+    response = requests.get(f"http://18.222.143.54:5001/")
+    res = str(response.text)
+    return res
