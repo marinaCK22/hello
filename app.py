@@ -15,12 +15,12 @@ def hello_world_from_algo():
 
 @app.route("/algo_1")
 def hello_world_from_algo1():
-    response = requests.get(f"http://18.222.143.54:5000/")
+    response = requests.get(f"http://18.117.98.137:5000/")
     res = str(response.text)
     return res
 
 @app.route("/algo_2")
 def hello_world_from_algo2():
-    response = requests.get(f"http://18.222.143.54:5001/")
+    response = requests.get(f"http://10.200.0.253:5000/")
     res = str(response.text)
     return res
